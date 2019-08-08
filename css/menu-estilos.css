@@ -1,0 +1,35 @@
+.navbar {background: #333;	overflow: hidden;}
+.navbar a {
+	float: left;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: Helvetica, sans-serif;
+	color: white;
+	background: #333;
+	padding: 15px 25px;
+	transition: all 0.5s;/*agrego transición a los botones para el desafío de la clase 7*/
+}
+.navbar a:hover {background: orange; color: #333;}
+.desplegable {overflow: hidden;float: left;}
+.desplegable .btn {
+	font-size: 1em;
+	font-family: Helvetica, sans-serif;
+	color: white;
+	background: #333;
+	padding: 15px 25px;
+	border:0;
+	transition: all 0.5s;/*agrego transición a los botones para el desafío de la clase 7*/
+}
+.desplegable .btn:hover{background: orange;color: #333;}
+.submenu {
+	display:none;
+	position: absolute;
+	min-height: 140px;
+	z-index: 2;
+}
+.submenu a{
+	float: none;
+	display: block;
+	transition: all 0.5s;/*agrego transición a los botones para el desafío de la clase 7*/
+}
+.desplegable:hover .submenu {display: block;}
